@@ -10,17 +10,16 @@
 
 
 window.onload=function(){
-
     const caunter =  document.querySelector("#caunter");
     const content = document.querySelector("#content");
-   // Append button to div 
+  // Append button to div 
     content.appendChild(generateBtn("-", "sub"));
     content.appendChild(generateBtn("+", "add"));
-   // Create caunter
+  // Create caunter
     const caunterSpan = document.createElement("span");
     caunterSpan.textContent= 0;
     caunter.appendChild(caunterSpan);
-    // Click on task element 
+  // create function with button 
     document.getElementById("sub").addEventListener("click", function(){
       parseInt(caunterSpan.innerHTML--) 
     })
