@@ -33,8 +33,8 @@ Il file `main.css` contiene lo stile:
 - la scelta dei colori è presa da questo sito web [https://coolors.co](https://coolors.co).
 
 ### JS:
-Il file `main.js` contiene la parte logica:
--
+ Il file `main.js` contiene la parte logica:
+
 
 ```javaScript
    //Create the button
