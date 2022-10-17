@@ -34,34 +34,39 @@ Il file `main.css` contiene lo stile:
 
 ### JS:
 Il file `main.js` contiene la parte logica:
+-
+
+```javaScript
+   //Create the button
+  function generateBtn(label, id){
+    const buttonDetail =  document.createElement("button");
+    buttonDetail.innerHTML = label;
+    buttonDetail.id = id;
+    
+    return buttonDetail;
+  }
+  }
+```
 - ho usato `document.querySelector` per ottenere il riferimento `caunter`, `content`:
 ```javaScript
     const caunter =  document.querySelector("#caunter");
     const content = document.querySelector("#content");
+  }
 ```
-- con `document.createElement` ho aggiunto i due elementi `span` e `button` inserendo `span` all'intero dell'elemento `caunter`,i pulsanti all'interno dell'elemento `content` :
+- con `document.createElement` ho aggiunto l'elemento `span` inserendolo all'interno dell'elemento `caunter` :
 
 ```javaScript
     const caunterSpan = document.createElement("span");
     caunterSpan.textContent= 0;
     caunter.appendChild(caunterSpan);
     
-    const buttonDecrement =  document.createElement("button");
-    buttonDecrement.innerHTML = "-";
-    buttonDecrement.id = "btn";
-    content.appendChild(buttonDecrement);
-    
-    const buttonIncrement = document.createElement("button");
-    buttonIncrement.innerHTML = "+";
-    buttonIncrement.id = "btn";
-    content.appendChild(buttonIncrement);
-```
- - Aggiunto poi il gestore per l'evento `onclick`che permette la funzione di cambiare il valore del counter +/- .
+
+ - Aggiunto poi il gestore per l'evento `addEventListener`che permette la funzione di cambiare il valore del counter +/- .
 ```javaScript 
- buttonDecrement.onclick = function(){
-     parseInt(caunterSpan.innerHTML--)
-   }
-   buttonIncrement.onclick = function(){
-  parseInt(caunterSpan.innerHTML++)
-   }
+    document.getElementById("sub").addEventListener("click", function(){
+      parseInt(caunterSpan.innerHTML--) 
+    })
+    document.getElementById("add").addEventListener("click", function(){
+    parseInt(caunterSpan.innerHTML++) 
+    }) 
 ```
