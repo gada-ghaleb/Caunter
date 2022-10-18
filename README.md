@@ -10,8 +10,7 @@
   </ul>
 
 ## Informazioni-sul-progetto
-**È un'applicazione che funziona come un counter che permette all'utente di aumentare o decrementare il valore del counter, è costruito con con`HTML` 
-`CSS` `JS`**
+**Qest'applicazione che funziona come un counter è permette all'utente di aumentare o decrementare il valore del counter, è stato costruito con con`HTML` `CSS` `JS`**
 
 ![application-screenshot](https://user-images.githubusercontent.com/99691998/194544370-7840a2a5-3f6a-485a-9ae7-ee40f5f3229f.png)
 
@@ -28,14 +27,14 @@
 ```
 ### CSS
 #### Il file `main.css` contiene lo stile:
-- posizionato elemento grafico dell'applicazione.
-- ottimizato su diverzi dispositivi
+- posizionamento elemento grafico dell'applicazione.
+- ottimizzazione su diverzi dispositivi
 - la scelta dei colori è presa da questo sito web [https://coolors.co](https://coolors.co).
 
 ### JS:
 #### Il file `main.js` contiene la parte logica:
 
-- E una funzione che genera un bottone dove all'interno vegono passati due parametri :
+- La funzione che genera un bottone dove all'interno vegono passati due parametri :
  1. `label`per dare una descrizione al bottone.
  2. `id`per assegnare un **ID** all'elemento.
 
@@ -56,7 +55,7 @@
     const content = document.querySelector("#content");
   }
 ```
-- Ho usato `appendChild` per il ritorno della funzione che genera un buttone :
+- Ho usato `appendChild` per il ritorno della funzione che genera il bottone :
 ```javaScript
   // Append button to div 
   content.appendChild(generateBtn("-", "sub"));
