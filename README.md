@@ -56,13 +56,13 @@
     const content = document.querySelector("#content");
   }
 ```
-- ho usato `appendChild` per il ritorno della funzione che genera un buttone :
+- Ho usato `appendChild` per il ritorno della funzione che genera un buttone :
 ```javaScript
   // Append button to div 
   content.appendChild(generateBtn("-", "sub"));
   content.appendChild(generateBtn("+", "add"));
 ```
-- con `document.createElement` ho aggiunto l'elemento `span` inserendolo all'interno dell'elemento `caunter` :
+- Con `document.createElement` ho aggiunto l'elemento `span` inserendolo all'interno dell'elemento `caunter` :
 
 ```javaScript
     const caunterSpan = document.createElement("span");
