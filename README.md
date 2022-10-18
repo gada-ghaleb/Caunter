@@ -10,7 +10,7 @@
   </ul>
 
 ## Informazioni-sul-progetto
-**Qest'applicazione che funziona come un counter è permette all'utente di aumentare o decrementare il valore del counter, è stato costruito con con`HTML` `CSS` `JS`**
+**Qesta applicazione funziona come un counter e permette all'utente di aumentare o decrementare il valore del counter, è stato costruito con con`HTML` `CSS` `JS`**
 
 ![application-screenshot](https://user-images.githubusercontent.com/99691998/194544370-7840a2a5-3f6a-485a-9ae7-ee40f5f3229f.png)
 
@@ -34,9 +34,9 @@
 ### JS:
 #### Il file `main.js` contiene la parte logica:
 
-- La funzione che genera un bottone dove all'interno vegono passati due parametri :
+- La funzione genera un bottone dove all'interno vegono passati due parametri :
  1. `label`per dare una descrizione al bottone.
- 2. `id`per assegnare un **ID** all'elemento.
+ 2. `id`per assegnare un ID all'elemento.
 
 ```javaScript
    //Create the button
