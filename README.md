@@ -17,7 +17,7 @@
 
 
 ### HTML 
-Il file `index.html`
+#### Il file `index.html`
 - include il file `main.css`nel blocco `<head>`
 ```html
    <link rel="stylesheet" href="css/main.css">
@@ -27,14 +27,17 @@ Il file `index.html`
    <script src="js/main.js"></script>
 ```
 ### CSS
-Il file `main.css` contiene lo stile:
+#### Il file `main.css` contiene lo stile:
 - posizionato elemento grafico dell'applicazione.
 - ottimizato su diverzi dispositivi
 - la scelta dei colori è presa da questo sito web [https://coolors.co](https://coolors.co).
 
 ### JS:
- Il file `main.js` contiene la parte logica:
+#### Il file `main.js` contiene la parte logica:
 
+- E una funzione che genera un bottone dove all'interno vegono passati due parametri :
+ 1. `label`per dare una descrizione al bottone.
+ 2. `id`per assegnare un **ID** all'elemento.
 
 ```javaScript
    //Create the button
@@ -45,13 +48,19 @@ Il file `main.css` contiene lo stile:
     
     return buttonDetail;
   }
-  }
-```
-- ho usato `document.querySelector` per ottenere il riferimento `caunter`, `content`:
+ ```
+
+- Ho usato `querySelector` per ottenere il riferimento `caunter`, `content`:
 ```javaScript
     const caunter =  document.querySelector("#caunter");
     const content = document.querySelector("#content");
   }
+```
+- ho usato `appendChild` per il ritorno della funzione che genera un buttone :
+```javaScript
+  // Append button to div 
+  content.appendChild(generateBtn("-", "sub"));
+  content.appendChild(generateBtn("+", "add"));
 ```
 - con `document.createElement` ho aggiunto l'elemento `span` inserendolo all'interno dell'elemento `caunter` :
 
