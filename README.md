@@ -19,11 +19,11 @@
 #### Il file `index.html`
 - include il file `main.css`nel blocco `<head>`
 ```html
-   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="assets/styles/main.css">
 ```
 - nel file `main.js` tramite tag `<script>` alla fine del `<body>`
 ```html
-   <script src="js/main.js"></script>
+  <script src="assets/scripts/main.js"></script>
 ```
 ### CSS
 #### Il file `main.css` contiene lo stile:
